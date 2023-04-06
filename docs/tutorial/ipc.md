@@ -170,7 +170,7 @@ sections.
 
 In the main process, we'll be creating a `handleFileOpen()` function that calls
 `dialog.showOpenDialog` and returns the value of the file path selected by the user. This function
-is used as a callback whenever an `ipcRender.invoke` message is sent through the `dialog:openFile`
+is used as a callback whenever an `ipcRenderer.invoke` message is sent through the `dialog:openFile`
 channel from the renderer process. The return value is then returned as a Promise to the original
 `invoke` call.
 
